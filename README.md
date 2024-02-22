@@ -38,14 +38,14 @@ On the "User Records" page, you can view all your operation records, search for 
 ## Deploy 📦
 I've decided to use Vercel because it has a simple Installation and Configuration flow. Vercel allows us that on every commit into `main` a new deploy runs upgrading the Site page.
 
-- Live demo on: <https://arithmetic-calculator-j5qxrhb9u-raffalopez.vercel.app/>
+- Live demo on: <https://arithmetic-calculator-seven.vercel.app//>
 
 ## Build-with 🛠️
-React
-TypeScript
-Redux
-Tailwind
-Axios
+- React
+- TypeScript
+- Redux
+- Tailwind
+- Axios
 
 ## Author 👨🏻‍💻
 

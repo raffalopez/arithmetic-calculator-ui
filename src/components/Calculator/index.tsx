@@ -78,10 +78,16 @@ const NewOperationForm = ({ balance, setBalance }: INewOperationFormProps) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="flex flex-row justify-between sm:gap-x-2">
         <p className="block text-gray-700 font-bold mb-2">
           Total credit: {balance}
         </p>
+        <button
+          onClick={() => navigate("/balance")}
+          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-1 px-1 rounded focus:outline-none focus:shadow-outline"
+        >
+          Balance
+        </button>
       </div>
 
       <div className="mb-4">

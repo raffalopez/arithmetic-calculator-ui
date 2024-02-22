@@ -19,6 +19,7 @@ const Balance = () => {
 
   useEffect(() => {
     getRecordUser();
+    setDeleted(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deleted]);
 
@@ -36,10 +37,10 @@ const Balance = () => {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
+    }).then(async (result) => {
       if (result.isConfirmed) {
+        await record.RemoveOperation(`operations/${id}`);
         setDeleted(true);
-        record.RemoveOperation(`operations/${id}`);
         Swal.fire({
           title: "Deleted!",
           text: "Your file has been deleted.",
